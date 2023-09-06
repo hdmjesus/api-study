@@ -1,0 +1,8 @@
+{
+  "schema": "./src/api/schemas/schema.graphql.ts",
+  "generates": {
+    "generated/types.ts": {
+      "plugins": ["@graphql-codegen/typescript","@graphql-codegen/typescript-resolvers"]
+    }
+  }
+}

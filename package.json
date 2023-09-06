@@ -1,0 +1,30 @@
+{
+  "name": "crm-graphql",
+  "version": "1",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "dev": "nodemon --exec ts-node ./src/index.ts",
+    "generate": "graphql-codegen --config codegen.json"
+  },
+  "author": "Jesus Hernandez",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@graphql-codegen/cli": "^4.0.0",
+    "@graphql-codegen/typescript": "^4.0.0",
+    "@graphql-codegen/typescript-resolvers": "^4.0.0",
+    "@graphql-tools/resolvers": "^0.0.1-alpha-7f591803.0",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "apollo-server": "^3.12.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.1.0",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.2.2"
+  }
+}
